@@ -25,10 +25,17 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    // sprint boot
     compile("org.springframework.boot:spring-boot-starter-web")
+    // swagger
     compile("io.springfox:springfox-swagger2:$springFoxVersion")
     compile("io.springfox:springfox-swagger-ui:$springFoxVersion")
+    // arangodb
     compile("com.arangodb:arangodb-java-driver:$arangodbDriverVersion")
+    // mongodb
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb:1.5.9.RELEASE")
+    // databind
+    compile("com.fasterxml.jackson.core:jackson-databind:2.7.5")
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
